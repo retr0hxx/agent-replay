@@ -1,0 +1,49 @@
+# macOS
+.DS_Store
+
+# Editors / IDE
+.idea/
+.vscode/
+*.swp
+
+# Node / TypeScript
+node_modules/
+dist/
+*.tsbuildinfo
+npm-debug.log*
+.npm/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.venv/
+venv/
+
+# Python packaging output
+python/dist/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# SSH keys accidentally placed in the working tree — never commit
+retr0hxx
+retr0hxx.pub
+id_ed25519*
+id_rsa*
+*.pem
+
+# Internal docs (not for publication)
+docs/
+
+# Claude Code local settings & notes
+.claude/
+CLAUDE.md

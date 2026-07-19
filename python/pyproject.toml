@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-replay"
+version = "0.1.0"
+description = "Record & replay LLM API calls for deterministic agent tests."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "agent-replay contributors" }]
+keywords = ["llm", "agent", "testing", "record-replay", "cassette", "vcr", "httpx", "pytest"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Framework :: Pytest",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Software Development :: Testing :: Mocking",
+]
+dependencies = [
+  "httpx>=0.25",
+]
+
+[project.optional-dependencies]
+pytest = ["pytest>=7"]
+dev = ["pytest>=7", "pytest-asyncio>=0.23"]
+
+[project.urls]
+Homepage = "https://github.com/retr0hxx/agent-replay"
+Repository = "https://github.com/retr0hxx/agent-replay"
+Issues = "https://github.com/retr0hxx/agent-replay/issues"
+
+[project.scripts]
+agentreplay = "agentreplay.cli:main"
+
+[project.entry-points."pytest11"]
+agentreplay = "agentreplay.pytest_plugin"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agentreplay"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src/agentreplay",
+  "README.md",
+  "LICENSE",
+  "pyproject.toml",
+]

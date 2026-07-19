@@ -1,0 +1,65 @@
+{
+  "name": "@retr0hxx/agent-replay",
+  "version": "0.1.0",
+  "description": "Record & replay LLM API calls for deterministic agent tests.",
+  "keywords": [
+    "llm",
+    "agent",
+    "testing",
+    "record-replay",
+    "cassette",
+    "vcr",
+    "openai",
+    "anthropic",
+    "fetch",
+    "vitest"
+  ],
+  "license": "MIT",
+  "author": "agent-replay contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/retr0hxx/agent-replay.git"
+  },
+  "homepage": "https://github.com/retr0hxx/agent-replay#readme",
+  "bugs": {
+    "url": "https://github.com/retr0hxx/agent-replay/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./vitest": {
+      "import": "./dist/vitest.js",
+      "types": "./dist/vitest.d.ts"
+    }
+  },
+  "bin": {
+    "agentreplay": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  }
+}
