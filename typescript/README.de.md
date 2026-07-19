@@ -82,4 +82,4 @@ stillschweigend veraltete Daten zurückzugeben. Die `divergence`-Policy
 MIT — siehe [LICENSE](LICENSE).
 
 Das Python-Pendant dieses Pakets findest du unter
-[`agent-replay` auf PyPI](https://pypi.org/project/agent-replay/).
+[`agent-replay-py` auf PyPI](https://pypi.org/project/agent-replay-py/).

@@ -13,13 +13,16 @@
 ## インストール
 
 ```bash
-pip install agent-replay
+pip install agent-replay-py
 ```
+
+インストール名は `agent-replay-py`、import 名は `agentreplay` です
+（PyPI に別プロジェクト `agentreplay` が存在するため、配布名だけ区別しています）。
 
 オプション:
 
 ```bash
-pip install "agent-replay[pytest]"   # pytest フィクスチャとマーカー
+pip install "agent-replay-py[pytest]"   # pytest フィクスチャとマーカー
 ```
 
 ## クイックスタート

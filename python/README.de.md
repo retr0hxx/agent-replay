@@ -14,13 +14,17 @@ gemeldet, statt stillschweigend veraltete Daten zurückzugeben.
 ## Installation
 
 ```bash
-pip install agent-replay
+pip install agent-replay-py
 ```
+
+Der Installationsname ist `agent-replay-py`, der Importname ist `agentreplay`
+(auf PyPI existiert bereits ein anderes Projekt namens `agentreplay`, daher
+unterscheiden wir nur den Verteilungsnamen).
 
 Optionale Extras:
 
 ```bash
-pip install "agent-replay[pytest]"   # pytest-Fixture und -Marker
+pip install "agent-replay-py[pytest]"   # pytest-Fixture und -Marker
 ```
 
 ## Schnellstart

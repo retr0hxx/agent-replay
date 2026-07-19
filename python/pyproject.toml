@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "agent-replay"
+name = "agent-replay-py"
 version = "0.1.0"
 description = "Record & replay LLM API calls for deterministic agent tests."
 readme = "README.md"

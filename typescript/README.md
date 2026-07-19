@@ -76,4 +76,4 @@ structured diff (`Report`) instead of silently returning stale data. The
 MIT — see [LICENSE](LICENSE).
 
 The Python sibling of this package lives at
-[`agent-replay` on PyPI](https://pypi.org/project/agent-replay/).
+[`agent-replay-py` on PyPI](https://pypi.org/project/agent-replay-py/).

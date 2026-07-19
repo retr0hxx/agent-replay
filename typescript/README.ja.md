@@ -77,5 +77,5 @@ npx agentreplay verify  cassettes/hello.jsonl
 MIT — [LICENSE](LICENSE) を参照。
 
 Python 版は
-[PyPI の `agent-replay`](https://pypi.org/project/agent-replay/)
+[PyPI の `agent-replay-py`](https://pypi.org/project/agent-replay-py/)
 にあります。

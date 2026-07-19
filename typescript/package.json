@@ -38,7 +38,7 @@
     }
   },
   "bin": {
-    "agentreplay": "./dist/cli.js"
+    "agentreplay": "dist/cli.js"
   },
   "files": [
     "dist",

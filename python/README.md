@@ -12,13 +12,17 @@ while still flagging when a prompt has drifted away from what was recorded.
 ## Install
 
 ```bash
-pip install agent-replay
+pip install agent-replay-py
 ```
+
+The install name is `agent-replay-py`; the import name is `agentreplay`
+(there is an unrelated `agentreplay` project on PyPI, so we distinguish the
+distribution name).
 
 Optional extras:
 
 ```bash
-pip install "agent-replay[pytest]"   # pytest fixture & marker
+pip install "agent-replay-py[pytest]"   # pytest fixture & marker
 ```
 
 ## Quick start
