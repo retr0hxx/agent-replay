@@ -1,3 +1,5 @@
+<!-- Language: **English** | [日本語](README.ja.md) | [Deutsch](README.de.md) -->
+
 # agent-replay (Python)
 
 Record & replay LLM API calls for deterministic agent tests.

@@ -1,3 +1,5 @@
+<!-- Language: **English** | [日本語](README.ja.md) | [Deutsch](README.de.md) -->
+
 # @retr0hxx/agent-replay
 
 Record & replay LLM API calls for deterministic agent tests.

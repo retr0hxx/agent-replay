@@ -50,6 +50,8 @@ packages = ["src/agentreplay"]
 include = [
   "src/agentreplay",
   "README.md",
+  "README.ja.md",
+  "README.de.md",
   "LICENSE",
   "pyproject.toml",
 ]
